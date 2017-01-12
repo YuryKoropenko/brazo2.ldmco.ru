@@ -1,0 +1,253 @@
+@import "bourbon/bourbon"
+@import "sass/_vars"
+@import "sass/_custom"
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.25
+	font-family: "RobotoRegular", sans-serif
+	overflow-x: hidden
+	background-color: #fff
+
+.hidden
+	display: none
+
+.header
+	margin-bottom: 10px
+	&__top
+		height: 58px
+		border-top: 8px solid #0099ff
+		background-color: #ff0049
+.nav
+	width: 100%
+	font-size: 0
+	&__item
+		display: inline-block
+		padding-left: 24px
+		line-height: 47px
+		&:first-child
+			margin-left: 0
+	&__link
+		font-size: 13px
+		color: #fff
+		text-transform: uppercase
+.pagination
+	&__left
+		display: inline-block
+		color: #fff
+		font-size: 13px
+	&__right
+		display: inline-block
+		color: #fff
+		line-height: 47px
+		margin-left: 20px
+		a
+			color: #fff
+			font-size: 13px
+.logo
+	display: inline-block
+.phone
+	display: inline-block
+	margin-left: 80px
+	font-size: 14px
+	color: #456b6e
+	position: relative
+	border-right: 1px solid #456b6e
+	padding-right: 20px
+	span
+		font-size: 24px
+		display: inline-block
+		position: absolute
+		left: 50px
+		top: -5px
+		width: 110px
+	a
+		text-align: right
+		display: block
+		width: 155px
+		text-decoration: underline
+.adres
+	display: inline-block
+	padding-left: 20px
+	font-size: 12px
+.izbran
+	display: inline-block
+	color: #456b6e
+	font-size: 12px
+	margin-left: 160px
+	a
+		font-size: 14px
+		color: #ff0049
+.corz
+	float: right
+	margin-top: 10px
+	a
+		color: #3d4e4f
+		font-size: 14px
+	span
+		font-size: 12px
+		color: #456b6e
+.sidebar
+	h2
+		background-color: #09f
+		height: 40px
+		line-height: 40px
+		border-radius: 20px
+		padding: 0 10px
+		text-transform: uppercase
+		color: #fff
+		font-size: 14px
+.s-item
+	display: block
+	line-height: 41px
+	a
+		text-transform: uppercase
+		color: #456b6e
+		font-size: 14px
+	span
+		color: #09f
+		font-size: 14px
+.search
+	width: 100%
+	input
+		width: 100%
+		display: block
+		background-color: #f3f9f9
+		border: 1px solid #e2f0f1
+		height: 42px
+		border-radius: 20px
+		padding: 0 40px
+.prod-list
+	padding-top: 33px
+	@extend .clearfix
+	&-item
+		width: 25%
+		border: 3px solid #dcf0f1
+		border-radius: 20px
+		margin-bottom: 5px
+		padding: 0 9px
+		text-align: center
+		height: 334px
+		float: left
+		img
+			width: 132px
+			display: block
+			margin: 10px auto
+		h2
+			font-size: 18px
+			text-transform: uppercase
+			color: #456b6e
+			display: inline-block
+			margin-bottom: 20px
+		a
+			display: block
+			text-align: left
+			color: #09f
+			font-size: 14px
+			padding-right: 20px
+			height: 20px
+.best-tov__wp
+	h2
+		text-transform: uppercase
+		color: #456b6e
+		font-size: 24px
+.tovary-wp
+	@extend .clearfix
+	width: 100%
+	padding-top: 20px
+	&__item
+		width: 20%
+		float: left
+		border: 3px solid #dcf0f1
+		border-radius: 20px
+		margin-bottom: 5px
+		padding: 20px 9px
+		text-align: center
+		height: 334px
+		position: relative
+		a
+			margin-bottom: 10px
+			display: block
+			color: #0099ff
+			font-size: 13px
+		img
+			width: 137px
+			margin: 0 auto
+			display: block
+		span
+			color: #456b6e
+			font-size: 19px
+			position: absolute
+			left: 0
+			right: 0
+			bottom: 32px
+.tovary-wp__more-wp
+	text-align: center
+	padding-top: 20px
+	padding-bottom: 20px
+	a
+		height: 30px
+		background-color: #b1cc6d
+		display: inline-block
+		color: #fff
+		padding: 0 45px
+		line-height: 30px
+		border-radius: 5px
+.colon
+	width: 170px
+	float: left
+	padding-left: 20px
+	a
+		display: block
+		color: #09f
+		font-size: 13px
+		line-height: 18px
+	&-wp
+		width: 100%
+.brend__wp
+	h2
+		padding-left: 20px
+		display: block
+		text-transform: uppercase
+		color: #456b6e
+		font-size: 24px
+		border-bottom: 1px solid #e2f0f1
+		padding-bottom: 10px
+		margin-bottom: 10px
+.footer
+	padding-top: 20px
+.zak-z
+	padding-top: 20px
+	i
+		color: #456b6e
+		font-size: 13px
+	&__phone
+		color: #456b6e
+		font-size: 10px
+		position: relative
+		span
+			color: #456b6e
+			font-size: 16px
+			position: absolute
+			right: 90px
+			top: -2px
+.center-footer
+	p
+		width: 100%
+		padding-bottom: 5px
+		color: #456b6e
+		text-transform: uppercase
+		font-size: 13px
+.center-footer__tov-block
+	float: left
+	display: block
+	width: 100 / 3 + %
+	&__title
+		font-size: 13px
+		color: #456b6e
+	&__item
+		color: #09f
+		font-size: 12px
+		line-height: 20px
